@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدیریت اطلاعات دانشجویان</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>لیست دانشجویان</h1>
+
+        <div class="form-group">
+            <input type="text" id="name" placeholder="نام و نام خانوادگی">
+            <input type="text" id="studentNumber" placeholder="شماره دانشجویی">
+            <button id="add" onclick="addStudent()">+</button>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" onkeyup="searchStudents()" placeholder="جستجو بر اساس نام یا شماره دانشجویی">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>نام</th>
+                    <th>شماره دانشجویی</th>
+                    <th>عملیات</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+                <!-- لیست دانشجویان اینجا نمایش داده می‌شود -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="./assets/js/script.js"></script>
+
+</html>
